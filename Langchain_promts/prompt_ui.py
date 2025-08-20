@@ -1,15 +1,20 @@
-from langchain_huggingface import ChatHuggingFace,HuggingFaceEndpoint
+#!/home/tst_imperial/langchain/venv/bin/python
+from langchain_google_genai import ChatGoogleGenerativeAI
 from dotenv import load_dotenv
 import streamlit as st
+from langchain_core.prompts import PromptTemplate,load_prompt
 load_dotenv()
-llm = HuggingFaceEndpoint(repo_id="deepseek-ai/DeepSeek-R1",
-                          task="text-generation",
-                          temperature=0.5                  
-    )
-model = ChatHuggingFace(llm=llm)
+model = ChatGoogleGenerativeAI(model="gemini-2.0-flash",temperature=0.4)
 st.header("Research Tool")
-usr_in=st.text_input("enter your thoughts!")
-
+usr_in_paper=st.selectbox("Select Research Paper Name",["Attention is all you need","BERT: Pre-training of Deep bidirectional Transformers","GPT-3: Language Models are Few-shot Learning","Diffusion Models GANs on Image Synthesis"])
+usr_in_style=st.selectbox("Select a Expalination style",["Begineer","Technical","code-oriented","Mathematical"])
+usr_in_length=st.selectbox("Select Explaination length",["Short(about 2 paras)","Medium(about 5 paras)","long and detailed"])
+template=load_prompt('/home/tst_imperial/langchain/template.json')
 if st.button("summarize"):
-    res=model.invoke(usr_in)
+    chain = template|model
+    res=chain.invoke({
+        'usr_in_paper':usr_in_paper,
+        'usr_in_style':usr_in_style,
+        'usr_in_length':usr_in_length
+    })
     st.write(res.content)
