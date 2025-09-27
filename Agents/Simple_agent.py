@@ -25,7 +25,7 @@ search_tool= Tool(
 
 prompt = hub.pull("hwchase17/react")
 
-agent = create_react_agent(
+agent = create_react_agent( 
     llm=model,
     tools=[search_tool],
     prompt=prompt
