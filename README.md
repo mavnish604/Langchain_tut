@@ -1,6 +1,5 @@
 # LangChain Tutorial 🚀  
-[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)  
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)   
 [![GitHub stars](https://img.shields.io/github/stars/mavnish604/Langchain_tut?style=social)](https://github.com/mavnish604/Langchain_tut/stargazers)  
 [![GitHub forks](https://img.shields.io/github/forks/mavnish604/Langchain_tut?style=social)](https://github.com/mavnish604/Langchain_tut/network/members)  
 [![GitHub issues](https://img.shields.io/github/issues/mavnish604/Langchain_tut)](https://github.com/mavnish604/Langchain_tut/issues)  
