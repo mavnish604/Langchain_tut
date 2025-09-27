@@ -1,7 +1,19 @@
-# LangChain Step-by-Step Implementation 🚀
+# LangChain Tutorial 🚀  
+[![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)  
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)  
+[![GitHub stars](https://img.shields.io/github/stars/mavnish604/Langchain_tut?style=social)](https://github.com/mavnish604/Langchain_tut/stargazers)  
+[![GitHub forks](https://img.shields.io/github/forks/mavnish604/Langchain_tut?style=social)](https://github.com/mavnish604/Langchain_tut/network/members)  
+[![GitHub issues](https://img.shields.io/github/issues/mavnish604/Langchain_tut)](https://github.com/mavnish604/Langchain_tut/issues)  
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/mavnish604/Langchain_tut)](https://github.com/mavnish604/Langchain_tut/pulls)  
 
-This repository is a **complete, structured, and step-by-step implementation** of the [CampusX LangChain Playlist](https://www.youtube.com/playlist?list=PLKnIA16_Rmvb1RYR-iTA_hzckHD9hL4uq).  
-It serves as both a **learning guide** and a **reference repo** for mastering LangChain from basics to advanced concepts.
+---
+
+## 📖 Overview
+
+This repository is a **complete, structured, and step-by-step implementation** of the  
+👉 [CampusX LangChain Playlist](https://www.youtube.com/playlist?list=PLKnIA16_RmvaTbihpo4MtzVm4XOQa0ER0).  
+
+It serves as both a **learning guide** and a **reference repo** for mastering LangChain from **basics to advanced** concepts.
 
 ---
 
@@ -37,6 +49,6 @@ Additional project files:
 Clone the repo and install the dependencies:
 
 ```bash
-git clone https://github.com/your-username/langchain-campusx.git
-cd langchain-campusx
+git clone https://github.com/mavnish604/Langchain_tut.git
+cd Langchain_tut
 pip install -r requirements.txt
